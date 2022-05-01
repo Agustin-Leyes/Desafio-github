@@ -1,0 +1,672 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+ box-sizing: border-box;}
+
+body{
+    font-family:  sans-serif;
+}
+
+html {
+    font-size:  62.5%;
+}
+
+
+/*-------INICIO DE HEADER----------*/
+
+.grid-container{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto; */
+    grid-template-areas: 
+    "header header header"
+    "main    main   main"
+    "footer  footer  footer"
+}
+
+
+.header {
+    grid-area: header;
+    max-height: 500px;
+    background: rgba(2, 0, 36, 0.996);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(8, 14, 59, 1) 43%, rgba(20, 39, 99, 1) 80%, rgba(20, 39, 99, 1) 80%, rgba(23, 45, 109, 1) 92%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-img {
+    width: 7%;
+
+}
+
+.container-img a {
+    width: 25%
+}
+
+.container-img img,
+.container-footer img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.container-nav {
+    width: 71vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #EFFFFD;
+    text-shadow: 1px 3.5px 3.5px black;
+}
+
+.loguearse {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.loguearse a {
+    color: white;
+}
+
+
+
+.listadonav:hover{
+    color: rgb(90, 89, 89);
+    text-shadow: 0;
+}
+
+
+
+
+.main{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-area: main;
+    grid-template-areas: 
+        "index index index"
+        "productos productos productos"
+        "servicios servicios servicios"
+        "alumnos alumnos alumnos"
+        "nosotros nosotros nosotros"    ;
+}
+
+
+
+/* EMPIEZA EL INICIO */
+
+.index-bloque1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#index {
+    grid-area: index;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.400)), url(imagenes/FOTOINICIO.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#index h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    color: rgb(247, 232, 232);
+    padding-top: 0.7rem;
+    text-align: center;
+}
+
+.parrafo-inicio p {
+    width: 80vw;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(240, 248, 255, 0.455);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+.conteiner-pesomuerto,
+.conteiner-sentadilla {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 40vw;
+    
+    
+}
+
+.conteiner-parrafo h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.25rem;
+    color: rgb(116, 128, 139);
+
+}
+
+
+.texto-h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: rgb(227 173 13);
+}
+
+.conteiner-parrafo .texto-h3 {
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 2;
+    height: 15rem;
+    padding: 2rem;
+
+}
+
+.container-videoexplicativo iframe {
+    width: 40vw;
+    
+}
+
+
+
+
+
+
+
+    /* termina sentadiila */
+
+/* empieza press de banca */
+
+
+.container-pressdebanca {
+    padding: 15px;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto;
+   
+}
+
+.container-pressdebanca .conteiner-parrafo h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.25rem;
+    
+}
+.container-pressdebanca .conteiner-parrafo .texto-h3 {
+    text-align: center;
+    font-size: 1.25rem;
+    height: 5rem;
+    padding: 2rem;
+}
+.conteiner-parrafo-press{
+    margin-bottom: 7rem;
+}
+
+
+/* termina press de banca */
+
+/* FIN DE INICIO */
+
+
+/*------ EMPIEZA PRODUCTOS----- */
+
+#productos{
+    grid-area: productos;
+    background-color: #0F1089;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230f107f' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230f1075' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230e116c' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230e1162' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230E1158' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+
+
+
+
+/* ----TERMINA PRODUCTOS----- */
+
+/* -----EMPIEZA SERVICIOS----- */
+
+#servicios{
+    grid-area: servicios;
+}
+
+/* ----FIN DE SERVICIOS---- */
+
+
+/* -----EMPIEZA ALUMNOS----- */
+
+#alumnos{
+    grid-area: alumnos;
+    background-color: #0F0057;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%230b0054' fill-opacity='0.24'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.24'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.titulo-parrafo h3{
+    display: flex;
+   justify-content: left;
+    font-size: 4rem;
+    color: rgb(247, 232, 232);
+    padding-top: 0.7rem;
+    text-align: center;
+   
+}
+
+.titulo-parrafo p{
+    text-align: left;
+    font-size: 2rem;
+    color: rgba(240, 248, 255, 0.455);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.chris-bumstead{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    color: rgb(200, 63, 13);
+    font-family: 'Anton', sans-serif;
+}
+
+.chris-bumstead img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.nick-walker{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    color: rgb(200, 63, 13);
+    font-family: 'Anton', sans-serif;
+}
+
+.nick-walker img{
+    height: 90%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.video-parrafo-2{
+    /* padding-right: 15rem; */ 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.video-alumnos{
+    width: 90%;
+}
+
+
+/* aplicando grid , en seccion nosotros */
+
+#nosotros{
+    grid-area: nosotros;
+}
+
+.conteiner-img{
+ display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-auto-rows: 20rem;
+gap: 1.5rem;
+}
+
+.galeria-imagenes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 2px 3px 5px 5px rgba(25,24,24,0.26);
+    -webkit-box-shadow: 2px 3px 5px 5px rgba(25,24,24,0.26);
+    -moz-box-shadow: 2px 3px 5px 5px rgba(25,24,24,0.26);
+    opacity:0.95;
+    
+
+}
+
+.pesas{
+    grid-row-start: span 3;
+}
+
+.zona-de-gimnasio-3{
+  grid-column-start: span 3;
+  grid-row-start: span 2;
+}
+
+.zona-de-gim{
+    grid-row-start: span;
+}
+
+.galeria-de-imagenes{
+    position: relative;
+}
+
+.titulo-imagenes{
+    position: absolute;
+    bottom: 0;
+    color: #EFFFFD;
+    background: rgba(0, 0, 0, 0.564);
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.h2-zona-gim{
+    text-align: center;
+}
+
+/*------ FIN DE GRID--- */
+
+/* INICIO DE FOOTER */
+
+
+footer {
+    grid-area: footer;
+    grid-column: 1 / span 3;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 4, 43, 1) 0%, rgba(17, 32, 89, 1) 0%, rgba(23, 45, 109, 1) 98%, rgba(23, 45, 109, 1) 98%);
+}
+
+.contenedor-footer {
+    display: flex;
+    height: 9rem;
+    padding: 10px;
+}
+
+.container-footer {
+    width: 17%;
+}
+
+.container-footer a {
+    width: 25%;
+}
+
+.container-footer img{
+    width: 75%;
+    height: 100%;
+   
+}
+
+.imagenes-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imagenes-footer a {
+    width: 5%;
+}
+
+.imagenes-footer img {
+    width: 80%;
+}
+
+.titulo-footer {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 2rem;
+    color: rgb(245, 245, 245);
+}
+
+
+  /* FIN DE FOOTER */
+
+
+
+  /* EMPIEZA MEDIA QUARE */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .index-bloque1 {
+        width: 83vw;
+    }
+
+    #index h1 {
+        font-size: 6rem;
+        color: red;
+    }
+
+    .parrafo-inicio p {
+        font-size: 1.5rem;
+        color: rgba(240 248 255 0.73);
+    }
+
+    .conteiner-parrafo-press{
+        margin-bottom: 10rem;
+
+    }
+    .container-pressdebanca {
+        margin: 0;
+        margin-left: 5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 6em;
+        
+    }
+
+    .conteiner-pesomuerto,
+    .conteiner-sentadilla,
+    .container-pressdebanca {
+        width: fit-content;
+        margin-left: 2.5rem
+    }  
+
+    .container-videoexplicativo iframe {
+        width: 80vw;
+     }
+    .container-footer {
+        width: 9%;
+    }
+    .container-footer img{
+        height: 3rem;
+        width: 6rem;
+       
+    }
+
+    footer h3 {
+        font-size: 1.75rem;
+    }
+
+    .titulo-footer {
+        width: 35%;
+    }
+
+    .imagenes-footer {
+        width: 19%;
+        justify-content: space-around;
+    }
+
+    .imagenes-footer a {
+        width: 25%;
+    }
+
+    .contenedor-footer {
+        padding: 20px;
+    }
+
+    .copy {
+        margin: 0px;
+        text-align: center;
+    }
+
+}
+
+    /* mobile */
+@media (max-width:450px) {
+
+    header{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        margin: 0px auto;
+    }
+
+    .container-nav{
+        margin: 0px auto;
+    }
+    .container-nav ul li{
+        font-size: 3rem;
+       
+    }
+
+    .container-nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .loguearse{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        align-items: flex-start;
+    }
+    .loguearse ul li{
+        list-style: none;
+    }
+
+    /* index */
+
+    .parrafo-inicio{
+        width: 100%;
+        margin: 0% auto;
+    }
+    #index h1 /*aca puse parra-inicio h1  y no me lo tomaba pero con el #index h1 si ,nose porque*/  {
+        font-size:  7rem;
+        color: rgb(165, 0, 0);
+        text-align: center;
+    }
+    .parrafo-inicio p{
+        width: 100%;
+        font-size: 3rem;
+        color: aliceblue;
+    }
+
+    .index-bloque1{
+        margin: 0% auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+        
+    }
+    .conteiner-pesomuerto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .conteiner-parrafo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .conteiner-parrafo h3{
+        font-size: 6rem;
+    }
+    .conteiner-parrafo .texto-h3{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .container-videoexplicativo{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .container-videoexplicativo iframe{
+        width: 70vw;
+        padding-top: 4rem;
+
+    }
+    .video-sentadilla{
+        padding-top:4rem;
+    }
+    /* tengo un problema aca , nose porque el video se sobrepone al texto por eso le estoy dando un padding top pero se que algo se me estas escapando */
+
+    .conteiner-sentadilla{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        flex-wrap: wrap;
+    }
+
+    .container-pressdebanca{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+    .container-pressdebanca .conteiner-parrafo h3{
+        font-size: 6rem;
+    }
+    .container-pressdebanca .conteiner-parrafo .texto-h3{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .container-pressdebanca .conteiner-parrafo{
+        /* display: flex;
+        flex-direction: column; */
+        width: 70vw;
+        overflow-y: scroll;
+        justify-content: flex-end;
+        align-items: flex-start;
+        /* padding-top: 9rem; */
+    }
+   /* no me gusto mucho como quedo el ulimo de press de banca , no queda como presentable que los demas esten uno de bajo del otro y este de press de banca este medio raro ahi con un titulo y parrafo con scroll y al lado el video ,no pude hacerlo porque  creeria yo no daba el espacio  o no lo hice bien una de dos. */
+
+   .nombre-alumno-nick{
+       width: 100%;
+   }
+
+   .nombre-alumno-nick img{
+    height: 100%;
+    width : 100%;
+    object-fit: cover;
+   }
+  
+    
+}
+ /* Te escribo por aca por si las dudas no lees el msj que va con la entrega como me dijiste el otro dia
+ al poner 450 px me genera un espacio blanco en el lado derecho  y al agregar grid me saca todo el responsive  que dejaste con flex, n .ose si aplique mal algo estuve  un buen momento buscando soluciones pero nada, capaz algo estoy aplicando mal o nose ,se me complico mucho esta entrega la verdad y me perdi bastante, nose si aplique mal el grid que creo mucho en eso de que no lo hice bien pero bueno lo entrego para ver mas que nada que errores tuves y su correcion asi lo hago bien , queria hacer lo del responsive  pero me tuvo mucho tiempo esto , y sabia que hacerlo responsive para mi no era nada facil , no tengo ni la minima idea de hacerlo responsive full y bien*/ 
