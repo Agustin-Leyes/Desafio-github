@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Somos Powerlifting</title>
 </head>
 
@@ -23,7 +24,6 @@
             <a href="index.html"> <img src="imagenes/powerliftingicono.png" alt="logo"></a>
         </div>
         <nav class="container-nav">
-
             <ul>
                 <li><a href="#index" class="listadonav">Inicio</a></li>
                 <li><a href="#productos" class="listadonav">Productos</a></li>
@@ -49,17 +49,17 @@
     <main class="main">
 
         <section id="index">
-            <div class="parrafo-inicio">
-                <h1 class="animate__backInDown">Powerlifting</h1>
-                <p>El powerlifting o levantamiento de potencia es un deporte de fuerza que consiste en la
+            <div class="parrafo-inicio">   
+                <h1 class="animate__animated animate__backInDown">Powerlifting</h1>
+                <p data-aos="zoom-in">El powerlifting o levantamiento de potencia es un deporte de fuerza que consiste en la
                     realización de tres ejercicios de levantamiento de peso: la sentadilla, el press de banca y el
                     peso muerto.</p>
             </div>
 
             <div class="titulo-h3">
-                <h3>Ejercicios prinpicales</h3>
+                <h3 data-aos="zoom-in">Ejercicios prinpicales</h3>
             </div>
-            <div class="index-bloque1">
+            <div class="index-bloque1" data-aos="zoom-in">
                 <!------EMPIEZA PESO MUERTO  -------->
                 <div class="conteiner-pesomuerto">
 
@@ -104,7 +104,7 @@
                 <!------- TERMINA SENTADILLA -------->
             </div>
             <!-----EMPIEZA PRESS DE BANCA -------->
-            <div class="container-pressdebanca">
+            <div class="container-pressdebanca" data-aos="zoom-in">
                 <div class="conteiner-parrafo conteiner-parrafo-press">
                     <h3>Press de banca</h3>
                     <p class="texto-h3">El press de banca es un ejercicio de empujón horizontal en el que se trabajan, principalmente, la musculatura del pectoral, deltoides y tríceps, aunque, dependiendo de la técnica realizada podemos involucrar mucha más masa muscular.</p>
@@ -292,8 +292,10 @@
 
         </div>
     </footer>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

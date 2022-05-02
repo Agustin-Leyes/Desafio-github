@@ -90,8 +90,19 @@ header nav li a {
     text-shadow: 0;
 }
 
+/* transformacion y transiciones */
+ul li{
+    transition: all 1s;
+}
+
+ul li:hover{
+    transform: scale(1.5);
+    transition-property: all;
+    transition-duration: 1s;
+}
 
 
+/* transformacion y transiciones---FIN */
 
 .main{
     display: grid;
@@ -125,7 +136,7 @@ header nav li a {
     
 }
 
-#index h1 {
+ .parrafo-inicio h1 {
     display: flex;
     justify-content: center;
     font-size: 7rem;
@@ -453,7 +464,7 @@ footer h3 {
         width: 83vw;
     }
 
-    #index h1 {
+    .parrafo-inicio h1 {
         font-size: 6rem;
         color: red;
     }
@@ -572,7 +583,7 @@ footer h3 {
         width: 100%;
         margin: 0% auto;
     }
-    #index h1 /*aca puse parra-inicio h1  y no me lo tomaba pero con el #index h1 si ,nose porque*/  {
+    .parrafo-inicio h1 /*aca puse parra-inicio h1  y no me lo tomaba pero con el #index h1 si ,nose porque*/  {
         font-size:  5rem;
         color: rgb(165, 0, 0);
         text-align: center;
