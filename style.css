@@ -122,6 +122,7 @@ header nav li a {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    
 }
 
 #index h1 {
@@ -232,7 +233,6 @@ header nav li a {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230f107f' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230f1075' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230e116c' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230e1162' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230E1158' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
 
 }
 
@@ -561,6 +561,11 @@ footer h3 {
         list-style: none;
     }
 
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     /* index */
 
     .parrafo-inicio{
@@ -568,23 +573,23 @@ footer h3 {
         margin: 0% auto;
     }
     #index h1 /*aca puse parra-inicio h1  y no me lo tomaba pero con el #index h1 si ,nose porque*/  {
-        font-size:  7rem;
+        font-size:  5rem;
         color: rgb(165, 0, 0);
         text-align: center;
     }
     .parrafo-inicio p{
         width: 100%;
-        font-size: 3rem;
+        font-size: 1.8rem;
         color: aliceblue;
     }
 
     .index-bloque1{
+        
         margin: 0% auto;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-       
+        align-items: center;  
         
         
     }
@@ -593,6 +598,7 @@ footer h3 {
         display: flex;
         flex-direction: column;
         align-items: center;   
+        
     }
     .conteiner-parrafo {
         display: flex;
@@ -602,33 +608,39 @@ footer h3 {
     }
 
     .conteiner-parrafo h3{
-        font-size: 6rem;
+        font-size: 3rem;
+        height: 100%;
     }
     .conteiner-parrafo .texto-h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 100%;
+        height: 100%;
     }
     .container-videoexplicativo{
         display: flex;
         align-items: flex-end;
+        
     }
     
     .container-videoexplicativo iframe{
         width: 70vw;
-        padding-top: 4rem;
+        height: auto;
+        /* padding-top: 4rem; */
 
     }
-    .video-sentadilla{
+    /* .video-sentadilla{
         padding-top:4rem;
-    }
+    } */
     /* tengo un problema aca , nose porque el video se sobrepone al texto por eso le estoy dando un padding top pero se que algo se me estas escapando */
 
     .conteiner-sentadilla{
+        
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center; 
-        flex-wrap: wrap;
+        justify-content: flex-start;
+        
     }
 
     .container-pressdebanca{
@@ -639,21 +651,34 @@ footer h3 {
 
     }
     .container-pressdebanca .conteiner-parrafo h3{
-        font-size: 6rem;
+        font-size: 3rem;
+        height: 100%;
     }
     .container-pressdebanca .conteiner-parrafo .texto-h3{
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 100%;
+        height: 100%;
     }
     .container-pressdebanca .conteiner-parrafo{
-        /* display: flex;
-        flex-direction: column; */
-        width: 70vw;
-        overflow-y: scroll;
-        justify-content: flex-end;
-        align-items: flex-start;
-        /* padding-top: 9rem; */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
+    .video-press{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+    
+    .video-press iframe{
+        width: 70vw;
+        height: auto;
+        /* padding-top: 4rem; */
+
+    }
+
    /* no me gusto mucho como quedo el ulimo de press de banca , no queda como presentable que los demas esten uno de bajo del otro y este de press de banca este medio raro ahi con un titulo y parrafo con scroll y al lado el video ,no pude hacerlo porque  creeria yo no daba el espacio  o no lo hice bien una de dos. */
 
    .nombre-alumno-nick{
