@@ -114,7 +114,7 @@ ul li:hover{
         "servicios servicios servicios"
         "alumnos alumnos alumnos"
         "nosotros nosotros nosotros"    ;
-}
+} 
 
 
 
@@ -127,14 +127,16 @@ ul li:hover{
     justify-content: space-around;
 }
 
+
 #index {
     grid-area: index;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.400)), url(imagenes/FOTOINICIO.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)), url(imagenes/FOTOINICIO.jpeg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     
 }
+
 
  .parrafo-inicio h1 {
     display: flex;
@@ -143,6 +145,7 @@ ul li:hover{
     color: rgb(247, 232, 232);
     padding-top: 0.7rem;
     text-align: center;
+    width: 100%;
 }
 
 .parrafo-inicio p {
@@ -257,7 +260,67 @@ ul li:hover{
 
 #servicios{
     grid-area: servicios;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    Max-width: 1280px;
+}
+.card{
+   
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease; 
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.card .contenido h3{
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc ;
+    border-radius: 4px;
+    transition: all 400ms ease; 
+}
+.card .contenido a:hover{
+    background-color: #2fb4cc;
+    color: #fff;
+}
+
+
 
 /* ----FIN DE SERVICIOS---- */
 
@@ -341,7 +404,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     grid-area: nosotros;
 }
 
-.conteiner-img{
+/* .conteiner-img{
  display: grid;
 grid-template-columns: 1fr 1fr 1fr ;
 grid-auto-rows: 20rem;
@@ -390,7 +453,7 @@ gap: 1.5rem;
 
 .h2-zona-gim{
     text-align: center;
-}
+} */
 
 /*------ FIN DE GRID--- */
 
@@ -533,6 +596,18 @@ footer h3 {
         text-align: center;
     }
 
+    /* ------------------SERVICIOS */
+    .container-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        height: 100%;
+        width: 80%;
+        margin: 50px;
+    }
+
 }
 
     /* mobile */
@@ -580,13 +655,14 @@ footer h3 {
     /* index */
 
     .parrafo-inicio{
-        width: 100%;
-        margin: 0% auto;
+        width: 90%;
+        margin: 0 auto;
     }
     .parrafo-inicio h1 /*aca puse parra-inicio h1  y no me lo tomaba pero con el #index h1 si ,nose porque*/  {
         font-size:  5rem;
         color: rgb(165, 0, 0);
         text-align: center;
+        width: 100%; 
     }
     .parrafo-inicio p{
         width: 100%;
@@ -621,6 +697,7 @@ footer h3 {
     .conteiner-parrafo h3{
         font-size: 3rem;
         height: 100%;
+        width: 100%;
     }
     .conteiner-parrafo .texto-h3{
         font-size: 1.5rem;
@@ -646,11 +723,15 @@ footer h3 {
 
     .conteiner-sentadilla{
         
-        width: 100%;
+        /* width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center; 
-        justify-content: flex-start;
+        justify-content: flex-start; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
     }
 
@@ -658,12 +739,14 @@ footer h3 {
         width: 100%;
         display: flex;
         align-items: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
 
     }
     .container-pressdebanca .conteiner-parrafo h3{
         font-size: 3rem;
         height: 100%;
+        width: 100%;
     }
     .container-pressdebanca .conteiner-parrafo .texto-h3{
         font-size: 1.5rem;
@@ -704,5 +787,4 @@ footer h3 {
   
     
 }
- /* Te escribo por aca por si las dudas no lees el msj que va con la entrega como me dijiste el otro dia
- al poner 450 px me genera un espacio blanco en el lado derecho  y al agregar grid me saca todo el responsive  que dejaste con flex, n .ose si aplique mal algo estuve  un buen momento buscando soluciones pero nada, capaz algo estoy aplicando mal o nose ,se me complico mucho esta entrega la verdad y me perdi bastante, nose si aplique mal el grid que creo mucho en eso de que no lo hice bien pero bueno lo entrego para ver mas que nada que errores tuves y su correcion asi lo hago bien , queria hacer lo del responsive  pero me tuvo mucho tiempo esto , y sabia que hacerlo responsive para mi no era nada facil , no tengo ni la minima idea de hacerlo responsive full y bien*/ 
+ 

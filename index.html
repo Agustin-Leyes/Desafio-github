@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/powerlifting.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,7 @@
 </head>
 
 <body class="grid-container">
-   
+
 
     <header class="header">
         <div class="container-img">
@@ -49,73 +51,100 @@
     <main class="main">
 
         <section id="index">
-            <div class="parrafo-inicio">   
-                <h1 class="animate__animated animate__backInDown">Powerlifting</h1>
-                <p data-aos="zoom-in">El powerlifting o levantamiento de potencia es un deporte de fuerza que consiste en la
-                    realización de tres ejercicios de levantamiento de peso: la sentadilla, el press de banca y el
-                    peso muerto.</p>
-            </div>
-
-            <div class="titulo-h3">
-                <h3 data-aos="zoom-in">Ejercicios prinpicales</h3>
-            </div>
-            <div class="index-bloque1" data-aos="zoom-in">
-                <!------EMPIEZA PESO MUERTO  -------->
-                <div class="conteiner-pesomuerto">
-
-                    <div class="conteiner-parrafo">
-                        <h3>PESO MUERTO</h3>
-                        <p class="texto-h3">
-                            Peso Muerto convencional, este estilo se caracteriza por colocar los pies más o menos a la
-                            anchura de los
-                            hombros, además las punteras miran hacia el frente o ligeramente hacia el exterior. Los
-                            brazos están por
-                            fuera de las piernas.
-                        </p>
-                    </div>
-                    <div class="container-videoexplicativo">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7KL8SgCP4KQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <!------TERMINA PESO MUERTO  -------->
-
-                <!------- EMPIEZA SENTADILLA -------->
-                <div class="conteiner-sentadilla">
-                    <div class="conteiner-parrafo ">
-                        <h3> SENTADILLA </h3>
-                        <p class="texto-h3">
-                            Es el ejercicio, por excelencia, para trabajar el tren inferior y cualquiera que pretenda
-                            aumentar su masa
-                            muscular en el tren inferior, como los culturistas, tienen en este ejercicio y sus múltiples
-                            variantes
-                            (front squat, sentadilla búlgara, sentadilla profunda etc.) un gran aliado.
-                        </p>
-                    </div>
-                    <div class="container-videoexplicativo video-sentadilla ">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HGyYXt7gsvY"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <!------- TERMINA SENTADILLA -------->
-            </div>
-            <!-----EMPIEZA PRESS DE BANCA -------->
-            <div class="container-pressdebanca" data-aos="zoom-in">
-                <div class="conteiner-parrafo conteiner-parrafo-press">
-                    <h3>Press de banca</h3>
-                    <p class="texto-h3">El press de banca es un ejercicio de empujón horizontal en el que se trabajan, principalmente, la musculatura del pectoral, deltoides y tríceps, aunque, dependiendo de la técnica realizada podemos involucrar mucha más masa muscular.</p>
-                </div>
-                <div class="container-videoexplicativo video-press">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VXEE9Etx5jY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+            <div class="container">
+                <div class="parrafo-inicio">
+                    <h1 class="animate__animated animate__backInDown">Powerlifting</h1>
+                    <p data-aos="zoom-in">El powerlifting o levantamiento de potencia es un deporte de fuerza que
+                        consiste en la
+                        realización de tres ejercicios de levantamiento de peso: la sentadilla, el press de banca y el
+                        peso muerto.</p>
                 </div>
 
+                <div class="titulo-h3">
+                    <h3 data-aos="zoom-in">Ejercicios prinpicales</h3>
+                </div>
+                <div class="row">
+
+                    <div class="index-bloque1" data-aos="zoom-in">
+                        <!------EMPIEZA PESO MUERTO  -------->
+                        <div class="col-lg-6 col-sm-12 col-ms-6">
+                            <div class="conteiner-pesomuerto">
+
+                                <div class="conteiner-parrafo">
+                                    <h3>PESO MUERTO</h3>
+                                    <p class="texto-h3">
+                                        Peso Muerto, este estilo se caracteriza por colocar los pies más o menos a la
+                                        anchura de los
+                                        hombros, además las punteras miran hacia el frente o ligeramente hacia el
+                                        exterior.
+                                        Los
+                                        brazos están por
+                                        fuera de las piernas.
+                                    </p>
+                                </div>
+                                <div class="container-videoexplicativo">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7KL8SgCP4KQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!------TERMINA PESO MUERTO  -------->
+
+                        <!------- EMPIEZA SENTADILLA -------->
+                        <div class="col-lg-6 col-sm-12 col-ms-6">
+                            <div class="conteiner-sentadilla">
+                                <div class="conteiner-parrafo ">
+                                    <h3> SENTADILLA </h3>
+                                    <p class="texto-h3">
+                                        Es el ejercicio, por excelencia, para trabajar el tren inferior y cualquiera que
+                                        pretenda
+                                        aumentar su masa
+                                        muscular en el tren inferior, como los culturistas, tienen en este ejercicio y
+                                        sus
+                                        múltiples
+                                        variantes
+                                        (front squat, sentadilla búlgara, sentadilla profunda etc.) un gran aliado.
+                                    </p>
+                                </div>
+                                <div class="container-videoexplicativo video-sentadilla ">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HGyYXt7gsvY"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- me rindo con grid system y el grid normal , no tengo idea como  se hace. -->
+                        <!------- TERMINA SENTADILLA -------->
+                    </div>
+                </div>
+
+                <!-----EMPIEZA PRESS DE BANCA -------->
+                <div class="row">
+
+                    <div class="container-pressdebanca" data-aos="zoom-in">
+                        <div class="conteiner-parrafo conteiner-parrafo-press">
+                            <h3>Press de banca</h3>
+                            <p class="texto-h3">El press de banca es un ejercicio de empujón horizontal en el que se
+                                trabajan,
+                                principalmente, la musculatura del pectoral, deltoides y tríceps, aunque,
+                                dependiendo de
+                                la
+                                técnica
+                                realizada podemos involucrar mucha más masa muscular.</p>
+                        </div>
+                        <div class="container-videoexplicativo video-press">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VXEE9Etx5jY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
             <!-------  TERMINA PRESS DE BANCA------>
         </section>
@@ -155,12 +184,64 @@
 
         <!-- INICIO DE SERIVCIOS (PLAN DE ENTRENAMIENTOS)-->
         <section id="servicios">
-
             <h2>Servicios</h2>
+            <div class="parrafo-servicios">
+                <p> Aqui Encontraras nuestros <strong>Servicios</strong> y <strong>Entrenamientos</strong> que buscas.
+                </p>
+                <h2>Plan de Entrenamientos</h2>
+            </div>
+            <div class="container-cards">
+                <div class="card">
+                    <figure>
+                        <img src="https://www.entrenamiento.com/wp-content/uploads/2020/01/comer-periodo-volumen.jpg"
+                            alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Volumen</h3>
+                        <p>Te daremos rutinas especificas. <br>
+                            Una dieta para un volumen limpio. <br>
+                            Clases personalizadas.<br>
+                            Online 24/7.<br>
+                            Consultorio las 24/7.<br>
+                            Descuentos en productos de nuestro gimnasio.</p>
+                        <a href="#">Comprar Servicio</a>
+                    </div>
+                </div>
 
-            <p> Aqui Encontraras nuestros <strong>Servicios</strong> y <strong>Entrenamientos</strong> que buscas.</p>
+                <div class="card">
+                    <figure>
+                        <img src="https://www.entrenamiento.com/wp-content/uploads/2020/01/comer-periodo-volumen.jpg"
+                            alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Volumen</h3>
+                        <p>Te daremos rutinas especificas. <br>
+                            Una dieta para un volumen limpio. <br>
+                            Clases personalizadas.<br>
+                            Online 24/7.<br>
+                            Consultorio las 24/7.<br>
+                            Descuentos en productos de nuestro gimnasio.</p>
+                        <a href="#">Comprar Servicio</a>
+                    </div>
+                </div>
 
-            <h2>Plan de Entrenamientos</h2>
+                <div class="card">
+                    <figure>
+                        <img src="https://www.entrenamiento.com/wp-content/uploads/2020/01/comer-periodo-volumen.jpg"
+                            alt="">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Volumen</h3>
+                        <p>Te daremos rutinas especificas. <br>
+                            Una dieta para un volumen limpio. <br>
+                            Clases personalizadas.<br>
+                            Online 24/7.<br>
+                            Consultorio las 24/7.<br>
+                            Descuentos en productos de nuestro gimnasio.</p>
+                        <a href="#">Comprar Servicio</a>
+                    </div>
+                </div>
+            </div>
 
 
         </section>
@@ -171,7 +252,7 @@
         <!--Inicio de alumnos-->
 
         <section id="alumnos">
-            
+
             <div class="titulo-parrafo">
                 <h3> Alumnos</h3>
                 <p>Aqui los resultados y comentarios de 2 alumnos nuestros que hoy en dia se dedican al powerlifting</p>
@@ -183,16 +264,16 @@
                 </div>
                 <div class="video-parrafo">
                     <p>Video de Chris Bumstead Entrenando</p>
-                    <iframe width="550" height="315" src="https://www.youtube.com/embed/yPjJA9VKX_Y" title="YouTube video player"
-                        frameborder="0"
+                    <iframe width="550" height="315" src="https://www.youtube.com/embed/yPjJA9VKX_Y"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen class="video-alumnos"></iframe>
                 </div>
-                
-            
+
+
             </div>
-            
-            
+
+
             <div class="nick-walker">
                 <div class="nombre-alumno nombre-alumno-nick">
                     <h3>Nick walker </h3>
@@ -200,18 +281,105 @@
                 </div>
                 <div class="video-parrafo-2">
                     <p>Video de Nick walker entrenando</p>
-                    <iframe width="550" height="315" src="https://www.youtube.com/embed/yGLA46kZuPo" title="YouTube video player"
-                        frameborder="0"
+                    <iframe width="550" height="315" src="https://www.youtube.com/embed/yGLA46kZuPo"
+                        title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen class="video-alumnos"></iframe>
-            
+
                 </div>
             </div>
         </section>
 
 
         <section id="nosotros">
-            <div class="titulo-nosotros">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/bicicletas.jpg" class="d-block w-100 h-auto" alt="..." class="img-fluid">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seccion bicicletas</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/pesas.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mancueras del gimnasio</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/pressdebanca.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seccion de gimnasio</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/zonagimnasio.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Zonda de gimnasio 1</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/zonagimnasio2.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Zona de gimnasio 2</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/zonagimnasio3.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Zona de gimnasio 3</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/zondaboxeo.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Zona de boxeo</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/zondadegim.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Zona de gim</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- no tengo idea como tener las imagenes en el mismo  tamaño -->
+
+
+
+
+            <!-- <div class="titulo-nosotros">
                 <h2>Nosotros</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id corrupti e..</p>
             </div>
@@ -256,7 +424,7 @@
                     <img src="imagenes/zonagimnasio3.jpg" alt="zona de gimnasio" class="galeria-imagenes">
                     <h2 class="titulo-imagenes h2-zona-gim">Zona de gimnasio 4</h2>
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
@@ -295,7 +463,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
