@@ -1,0 +1,101 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto; */
+  grid-template-areas: "header header header" "main    main   main" "footer  footer  footer";
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: main;
+  grid-template-areas: "index index index" "productos productos productos" "servicios servicios servicios" "alumnos alumnos alumnos" "nosotros nosotros nosotros";
+}
+
+#nosotros {
+  grid-area: nosotros;
+}
+#nosotros .conteiner-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 20rem;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  #nosotros .conteiner-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 40rem;
+  }
+}
+#nosotros .conteiner-img .galeria-de-imagenes {
+  position: relative;
+  transition: all 400ms ease;
+}
+#nosotros .conteiner-img .galeria-de-imagenes:hover {
+  transform: translateY(-3%);
+}
+#nosotros .conteiner-img .galeria-de-imagenes .galeria-imagenes {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 2px 3px 5px 5px rgba(25, 24, 24, 0.26);
+  -webkit-box-shadow: 2px 3px 5px 5px rgba(25, 24, 24, 0.26);
+  -moz-box-shadow: 2px 3px 5px 5px rgba(25, 24, 24, 0.26);
+  opacity: 0.95;
+}
+#nosotros .conteiner-img .galeria-de-imagenes .pesas {
+  grid-row-start: span 3;
+}
+@media screen and (max-width: 500px) {
+  #nosotros .conteiner-img .galeria-de-imagenes .pesas {
+    grid-row-start: span 1;
+  }
+}
+#nosotros .conteiner-img .galeria-de-imagenes .zona-de-gimnasio-3 {
+  grid-column-start: span 3;
+  grid-row-start: span 2;
+}
+@media screen and (max-width: 500px) {
+  #nosotros .conteiner-img .galeria-de-imagenes .zona-de-gimnasio-3 {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+}
+#nosotros .conteiner-img .galeria-de-imagenes .zona-de-gim {
+  grid-row-start: span;
+}
+@media screen and (max-width: 500px) {
+  #nosotros .conteiner-img .galeria-de-imagenes .zona-de-gim {
+    grid-row-start: span 1;
+  }
+}
+#nosotros .conteiner-img .galeria-de-imagenes .titulo-imagenes {
+  position: absolute;
+  bottom: 0;
+  color: #EFFFFD;
+  background: rgba(0, 0, 0, 0.564);
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+#nosotros .conteiner-img .galeria-de-imagenes .h2-zona-gim {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

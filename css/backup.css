@@ -456,7 +456,7 @@ background: linear-gradient(0deg, rgba(30,48,124,1) 0%, rgba(25,25,33,1) 0%); */
 
 
 /* aplicando grid , en seccion nosotros */
-
+/* 
 #nosotros {
     grid-area: nosotros;
 }
@@ -510,7 +510,7 @@ background: linear-gradient(0deg, rgba(30,48,124,1) 0%, rgba(25,25,33,1) 0%); */
 
 .h2-zona-gim {
     text-align: center;
-}
+} */
 
 /*------ FIN DE GRID--- */
 
@@ -875,7 +875,7 @@ footer h3 {
 
 
     /* ------------NOSOTROS */
-    .conteiner-img {
+    /* .conteiner-img {
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: 40rem;
@@ -892,7 +892,7 @@ footer h3 {
 
     .zona-de-gim {
         grid-row-start: span 1;
-    }
+    } */
 
     /* ---------------FOOTER */
 

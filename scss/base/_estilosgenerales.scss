@@ -1,0 +1,36 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto; */
+    grid-template-areas:
+        "header header header"
+        "main    main   main"
+        "footer  footer  footer"
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: main;
+    grid-template-areas:
+        "index index index"
+        "productos productos productos"
+        "servicios servicios servicios"
+        "alumnos alumnos alumnos"
+        "nosotros nosotros nosotros";
+    }
