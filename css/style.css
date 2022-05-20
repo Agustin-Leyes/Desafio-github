@@ -26,6 +26,189 @@ html {
   grid-template-areas: "index index index" "productos productos productos" "servicios servicios servicios" "alumnos alumnos alumnos" "nosotros nosotros nosotros";
 }
 
+.header .container-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-area: header;
+  max-height: 500px;
+  background: rgb(1, 1, 28);
+  background: linear-gradient(0deg, rgb(1, 1, 28) 4%, rgb(3, 12, 52) 100%);
+  /* background: rgba(2, 0, 36, 0.996);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(8, 14, 59, 1) 43%, rgba(20, 39, 99, 1) 80%, rgba(20, 39, 99, 1) 80%, rgba(23, 45, 109, 1) 92%); */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header .container-img {
+  width: 7%;
+}
+.header .container-img a {
+  width: 25%;
+}
+.header .container-img a img {
+  object-fit: cover;
+  width: 100%;
+}
+.header .container-nav {
+  width: 71vw;
+}
+.header .container-nav ul {
+  list-style: none;
+  font-size: 2.1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.header .container-nav ul li {
+  transition: all 1s;
+}
+.header .container-nav ul li:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.header .container-nav ul li .listadonav {
+  text-decoration: none;
+  color: #EFFFFD;
+  text-shadow: 1px 3.5px 3.5px black;
+}
+.header .container-nav ul li .listadonav:hover {
+  color: rgb(90, 89, 89);
+  text-shadow: 0;
+}
+.header .loguearse {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.header .loguearse ul li a {
+  color: white;
+}
+
+#index {
+  grid-area: index;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/FOTOINICIO.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#index .parrafo-inicio h1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 7rem;
+  color: rgb(247, 232, 232);
+  padding-top: 0.7rem;
+  text-align: center;
+  width: 100%;
+}
+#index .parrafo-inicio p {
+  width: 80vw;
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(240, 248, 255, 0.7);
+  margin: 0 auto;
+  padding: 1rem;
+}
+#index .contenedor-h3 .titulo-h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: rgb(227, 173, 13);
+  text-align: justify;
+  font-size: 1.25rem;
+  font-weight: 520;
+  line-height: 2;
+  padding: 2rem;
+}
+#index .index-bloque1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+#index .index-bloque1 .container-pesomuerto {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 40vw;
+  margin-top: 2rem;
+}
+#index .index-bloque1 .container-pesomuerto .container-parrafo h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.25rem;
+  color: rgb(116, 128, 139);
+}
+#index .index-bloque1 .container-pesomuerto .container-parrafo .texto-h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: rgb(227, 173, 13);
+  text-align: justify;
+  font-size: 1.25rem;
+  font-weight: 520;
+  line-height: 2;
+  padding: 2rem;
+}
+#index .index-bloque1 .container-pesomuerto .container-videoexplicativo iframe {
+  border-radius: 5px;
+  width: 40vw;
+}
+#index .index-bloque1 .container-sentadilla {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 40vw;
+  margin-top: 2rem;
+}
+#index .index-bloque1 .container-sentadilla .container-parrafo h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.25rem;
+  color: rgb(116, 128, 139);
+}
+#index .index-bloque1 .container-sentadilla .container-parrafo .texto-h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: rgb(227, 173, 13);
+  text-align: justify;
+  font-size: 1.25rem;
+  font-weight: 520;
+  line-height: 2;
+  padding: 2rem;
+}
+#index .index-bloque1 .container-sentadilla .container-videoexplicativo iframe {
+  border-radius: 5px;
+  width: 40vw;
+}
+#index .container-pressdebanca {
+  padding: 15px;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+#index .container-pressdebanca .container-parrafo h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.25rem;
+}
+#index .container-pressdebanca .container-parrafo .texto-h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: rgb(227, 173, 13);
+  font-size: 1.25rem;
+  font-weight: 520;
+  line-height: 2;
+  padding: 2rem;
+}
+#index .container-pressdebanca .container-videoexplicativo iframe {
+  border-radius: 5px;
+  width: 40vw;
+}
+
 #nosotros {
   grid-area: nosotros;
 }

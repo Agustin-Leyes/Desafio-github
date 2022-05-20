@@ -1,0 +1,74 @@
+// --------------------HEADER
+
+.header {
+    grid-area: header;
+    max-height: 500px;
+    background: rgb(1, 1, 28);
+    background: linear-gradient(0deg, rgba(1, 1, 28, 1) 4%, rgba(3, 12, 52, 1) 100%);
+    /* background: rgba(2, 0, 36, 0.996);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(8, 14, 59, 1) 43%, rgba(20, 39, 99, 1) 80%, rgba(20, 39, 99, 1) 80%, rgba(23, 45, 109, 1) 92%); */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .container-img {
+        width: 7%;
+
+        a {
+            width: 25%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+    .container-nav {
+        width: 71vw;
+        @extend %flex;
+        ul {
+            list-style: none;
+            font-size: 2.1rem;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            flex-wrap: wrap;
+
+            li {
+                transition: all 1s;
+
+                &:hover {
+                    transform: scale(1.5);
+                    transition-property: all;
+                    transition-duration: 1s;
+                }
+
+                .listadonav {
+                    text-decoration: none;
+                    color: #EFFFFD;
+                    text-shadow: 1px 3.5px 3.5px black;
+
+                    &:hover {
+                        color: rgb(90, 89, 89);
+                        text-shadow: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .loguearse {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+
+        ul {
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -20,9 +20,8 @@ html {
     grid-template-areas:
         "header header header"
         "main    main   main"
-        "footer  footer  footer"
+        "footer  footer  footer";
 }
-
 .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,3 +33,4 @@ html {
         "alumnos alumnos alumnos"
         "nosotros nosotros nosotros";
     }
+

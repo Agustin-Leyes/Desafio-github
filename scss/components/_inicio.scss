@@ -1,0 +1,150 @@
+// -------------------------INDEX
+
+#index {
+    grid-area: index;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)), url(../imagenes/FOTOINICIO.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .parrafo-inicio {
+        h1 {
+//----------------------- aca esta el error que te digo
+            @include flexible (flex, space-around);
+            font-size: 7rem;
+            color: rgb(247, 232, 232);
+            padding-top: 0.7rem;
+            text-align: center;
+            width: 100%;
+            
+        }
+
+        p {
+            width: 80vw;
+            text-align: center;
+            font-size: 2rem;
+            color: rgba(240, 248, 255, 0.700);
+            margin: 0 auto;
+            padding: 1rem;
+        }
+    }
+
+    .contenedor-h3 {
+        .titulo-h3 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: rgb(227 173 13);
+            text-align: justify;
+            font-size: 1.25rem;
+            font-weight: 520;
+            line-height: 2;
+            padding: 2rem;
+
+        }
+    }
+
+    .index-bloque1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        .container-pesomuerto {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 40vw;
+            margin-top: 2rem;
+
+            .container-parrafo {
+                h3 {
+                    text-align: center;
+                    font-size: 2rem;
+                    margin: 0.25rem;
+                    color: rgb(116, 128, 139);
+                }
+                .texto-h3{
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    color: rgb(227 173 13);
+                    text-align: justify;
+                    font-size: 1.25rem;
+                    font-weight: 520;
+                    line-height: 2;
+                    padding: 2rem;
+                }
+            }
+
+            .container-videoexplicativo {
+                iframe {
+                    border-radius: 5px;
+                    width: 40vw;
+                }
+            }
+        }
+
+        .container-sentadilla {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 40vw;
+            margin-top: 2rem;
+
+            .container-parrafo {
+                h3 {
+                    text-align: center;
+                    font-size: 2rem;
+                    margin: 0.25rem;
+                    color: rgb(116, 128, 139);
+                }
+                    .texto-h3 {
+                        font-size: 1.8rem;
+                        text-transform: uppercase;
+                        color: rgb(227 173 13);
+                        text-align: justify;
+                        font-size: 1.25rem;
+                        font-weight: 520;
+                        line-height: 2;
+                        padding: 2rem;
+                    }
+                
+            }
+
+            .container-videoexplicativo {
+                iframe {
+                    border-radius: 5px;
+                    width: 40vw;
+                }
+            }
+        }
+    }
+
+    .container-pressdebanca {
+        padding: 15px;
+        text-align: center;
+        width: 90vw;
+        margin: 0 auto;
+        .container-parrafo {
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+                margin: 0.25rem;
+            }
+
+            .texto-h3 {
+                font-size: 1.8rem;
+                        text-transform: uppercase;
+                        color: rgb(227 173 13);
+                        font-size: 1.25rem;
+                        font-weight: 520;
+                        line-height: 2;
+                        padding: 2rem;
+            }
+        }
+        .container-videoexplicativo iframe {
+            border-radius: 5px;
+            width: 40vw;
+        
+        }
+    }
+}
