@@ -1,0 +1,20 @@
+#productos {
+    border: solid 3px;
+    grid-area: productos;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+        .img-productos {
+            height: 50%;
+            width: 50%;
+            object-fit: cover;
+        }
+    
+
+    .padding-productos {
+        padding-bottom: 2rem;
+    }
+}
