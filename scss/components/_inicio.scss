@@ -8,15 +8,29 @@
     background-repeat: no-repeat;
 
     .parrafo-inicio {
+        @include mv() {
+            width: 90%;
+            margin: 0px auto;
+        }
+
         h1 {
-//----------------------- aca esta el error que te digo
             @include flexible (flex, space-around);
             font-size: 7rem;
             color: rgb(247, 232, 232);
             padding-top: 0.7rem;
             text-align: center;
             width: 100%;
-            
+
+            @include tablet () {
+                font-size: 6rem;
+                color: red;
+
+                @include mv() {
+                    font-size: 5rem;
+                    color: rgb(165, 0, 0);
+                }
+            }
+
         }
 
         p {
@@ -26,6 +40,11 @@
             color: rgba(240, 248, 255, 0.700);
             margin: 0 auto;
             padding: 1rem;
+
+            @include tablet () {
+                font-size: 1.5rem;
+                color: rgba(240, 248, 255, 0.73);
+            }
         }
     }
 
@@ -49,6 +68,18 @@
         margin: 0 auto;
         justify-content: space-around;
 
+        @include tablet () {
+            width: 83vw;
+        }
+
+        @include mv() {
+            margin: 0% auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .container-pesomuerto {
             display: flex;
             flex-direction: column;
@@ -56,14 +87,39 @@
             width: 40vw;
             margin-top: 2rem;
 
+            @include tablet () {
+                width: fit-content;
+                margin-left: 2.5rem;
+            }
+
+            @include mv() {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             .container-parrafo {
+                @include mv() {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 h3 {
                     text-align: center;
                     font-size: 2rem;
                     margin: 0.25rem;
                     color: rgb(116, 128, 139);
+
+                    @include mv() {
+                        font-size: 3rem;
+                        height: 100%;
+                        width: 100%;
+                    }
                 }
-                .texto-h3{
+
+                .texto-h3 {
                     font-size: 1.8rem;
                     text-transform: uppercase;
                     color: rgb(227 173 13);
@@ -72,14 +128,39 @@
                     font-weight: 520;
                     line-height: 2;
                     padding: 2rem;
+
+                    @include mv() {
+                        font-size: 1.5rem;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
+
             }
 
             .container-videoexplicativo {
+                @include mv() {
+                    display: flex;
+                    align-items: flex-end;
+                }
+
                 iframe {
                     border-radius: 5px;
                     width: 40vw;
+
+                    @include tablet () {
+                        width: 80vw;
+                    }
+                    @include mv(){
+                        border-radius: 5px;
+                        width: 75vw;
+    
+                    }
                 }
+            }
+
+            .video-pesomuerto {
+                padding-top: 2rem;
             }
         }
 
@@ -90,30 +171,70 @@
             width: 40vw;
             margin-top: 2rem;
 
+            @include tablet () {
+                width: fit-content;
+                margin-left: 2.5rem;
+            }
+
+            @include mv() {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             .container-parrafo {
                 h3 {
                     text-align: center;
                     font-size: 2rem;
                     margin: 0.25rem;
                     color: rgb(116, 128, 139);
-                }
-                    .texto-h3 {
-                        font-size: 1.8rem;
-                        text-transform: uppercase;
-                        color: rgb(227 173 13);
-                        text-align: justify;
-                        font-size: 1.25rem;
-                        font-weight: 520;
-                        line-height: 2;
-                        padding: 2rem;
+
+                    @include mv() {
+                        font-size: 3rem;
+                        width: 100%;
+                        height: 100%;
                     }
-                
+                }
+
+                .texto-h3 {
+                    font-size: 1.8rem;
+                    text-transform: uppercase;
+                    color: rgb(227 173 13);
+                    text-align: justify;
+                    font-size: 1.25rem;
+                    font-weight: 520;
+                    line-height: 2;
+                    padding: 2rem;
+
+                    @include mv() {
+                        font-size: 1.5rem;
+                        width: 100%;
+
+                    }
+                }
+
             }
 
             .container-videoexplicativo {
+                height: 100%;
+                @include mv(){
+                    display: flex;
+                    align-items: flex-end;
+                }
+
                 iframe {
                     border-radius: 5px;
                     width: 40vw;
+
+                    @include tablet () {
+                        width: 80vw;
+                    }
+                    @include mv(){
+                        border-radius: 5px;
+                        width: 75vw;
+    
+                    }
                 }
             }
         }
@@ -124,27 +245,89 @@
         text-align: center;
         width: 90vw;
         margin: 0 auto;
+
+        @include tablet () {
+            margin: 0;
+            margin-left: 5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 6em;
+            width: fit-content;
+            margin-left: 2.5rem;
+        }
+        @include mv(){
+            width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+
         .container-parrafo {
+            @include mv(){
+                display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+            }
             h3 {
                 text-align: center;
                 font-size: 2rem;
                 margin: 0.25rem;
+                @include mv(){
+                    text-align: center;
+                    font-size: 2rem;
+                    margin: 0.25rem;
+                    color: rgb(116, 128, 139);
+
+                }
             }
 
             .texto-h3 {
                 font-size: 1.8rem;
-                        text-transform: uppercase;
-                        color: rgb(227 173 13);
-                        font-size: 1.25rem;
-                        font-weight: 520;
-                        line-height: 2;
-                        padding: 2rem;
+                text-transform: uppercase;
+                color: rgb(227 173 13);
+                font-size: 1.25rem;
+                font-weight: 520;
+                line-height: 2;
+                padding: 2rem;
+                @include mv(){
+                    font-size: 1.5rem;
+                        width: 100%;;
+        text-align:justify ;
+                }
             }
         }
-        .container-videoexplicativo iframe {
-            border-radius: 5px;
-            width: 40vw;
-        
+
+        .container-parrafo-press {
+            @include tablet () {
+                margin-bottom: 2rem;
+                text-align: center;
+                font-size: 2rem;
+                margin: 0.25rem;
+                color: rgb(116, 128, 139);
+            }
+        }
+
+        .container-videoexplicativo {
+            @include mv(){
+                display: flex;
+                align-items: flex-end;
+            }
+            iframe {
+                @include mv(){
+                    border-radius: 5px;
+                    width: 75vw;
+
+                }
+                border-radius: 5px;
+                width: 70vw;
+
+                @include tablet () {
+                    width: 80vw;
+                }
+            }
         }
     }
 }

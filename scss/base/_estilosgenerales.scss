@@ -32,5 +32,10 @@ html {
         "servicios servicios servicios"
         "alumnos alumnos alumnos"
         "nosotros nosotros nosotros";
+        @include mv(){
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+           }
     }
+
 

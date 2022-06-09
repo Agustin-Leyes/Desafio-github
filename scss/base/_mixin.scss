@@ -2,3 +2,16 @@
     display: $flexible;
     justify-content: $justify;
 }
+
+@mixin tablet ($medida:700px, $medida1:1280px){
+    @media  screen and (min-width: $medida) and (max-width:$medida1) {
+        @content;
+    }
+}
+
+
+@mixin mv ($medidamv:500px){
+    @media screen and (max-width:$medidamv){
+        @content;
+    }
+}

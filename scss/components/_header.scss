@@ -10,7 +10,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    @include mv(){
+        margin: 0px auto;
+    }
     .container-img {
         width: 7%;
 
@@ -27,6 +29,9 @@
     .container-nav {
         width: 71vw;
         @extend %flex;
+        @include mv(){
+            marign: 0px auto;
+        }
         ul {
             list-style: none;
             font-size: 2.1rem;
@@ -34,9 +39,17 @@
             justify-content: space-between;
             width: 80%;
             flex-wrap: wrap;
-
+            @include mv(){
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 2rem;
+            }
             li {
                 transition: all 1s;
+                @include mv(){
+                    font-size: 3rem;
+                }
 
                 &:hover {
                     transform: scale(1.5);
@@ -62,9 +75,18 @@
         display: flex;
         align-items: center;
         margin: 20px;
-
+        @include mv(){
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         font-size: 2rem;
+         align-items: flex-start;   
+        }
         ul {
             li {
+                @include mv(){
+            list-style: none;
+                }
                 a {
                     color: white;
                 }

@@ -38,6 +38,12 @@
             display: flex;
             justify-content: flex-end;
             font-size: 2.5rem;
+            @include mv(){
+                width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2.5rem;
+            }
         }
     }
 
@@ -47,7 +53,10 @@
         display: flex;
         max-width: 1280px;
         margin-bottom: 10rem;
-
+        @include mv(){
+            display: flex;
+            flex-wrap: wrap;
+        }
         .card {
             width: 100%;
             margin: 20px;
