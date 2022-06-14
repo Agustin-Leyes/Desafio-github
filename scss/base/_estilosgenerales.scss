@@ -23,6 +23,7 @@ html {
         "footer  footer  footer";
 }
 .main {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-area: main;

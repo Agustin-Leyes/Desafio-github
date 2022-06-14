@@ -2,11 +2,13 @@
     grid-area: header;
 
     nav {
+        
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         min-height: 8vh;
-        background-color: #294674;
+        background: rgba(2, 0, 36, 0.996);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(8, 14, 59, 1) 43%, rgba(20, 39, 99, 1) 80%, rgba(20, 39, 99, 1) 80%, rgba(23, 45, 109, 1) 92%);
         @media screen and (max-width: 699px){
             flex-direction: column;
         align-items: flex-start;
@@ -26,8 +28,9 @@
         }
 
         .enlaces-menu {
-            
+            width: 100%;
             display: flex;
+            justify-content: center;
             padding: 0;
             @media screen and (max-width: 699px){
                 flex-direction: column;
@@ -46,7 +49,8 @@
                 list-style-type: none;
                 transition: 0.4s;
                 &:hover{
-                    background-color: rgb(62, 130, 197);
+                    background-color: rgb(90, 89, 89);
+                    
                 }
                 @media screen and (max-width: 699px){
                     width: 100%;
