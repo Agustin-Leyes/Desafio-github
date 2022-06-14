@@ -10,7 +10,7 @@
 }
 
 
-@mixin mv ($medidamv:500px){
+@mixin mv ($medidamv:699px){
     @media screen and (max-width:$medidamv){
         @content;
     }
