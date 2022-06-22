@@ -728,6 +728,18 @@ html {
 #nosotros {
   grid-area: nosotros;
 }
+#nosotros .titulo-nosotros h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(10, 5, 5);
+  font-size: 5.9rem;
+}
+#nosotros .titulo-nosotros p {
+  font-size: 2rem;
+  color: darkgoldenrod;
+}
 #nosotros .conteiner-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
